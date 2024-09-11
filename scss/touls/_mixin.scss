@@ -1,0 +1,11 @@
+@mixin ffinstrument($fz, $fw){
+    font-family: 'Instrument Sans', sans-serif;
+    font-size: $fz;
+    font-weight: $fw;
+}
+
+@mixin ffjacart($fz, $fw){
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: $fz;
+    font-weight: $fw;
+}

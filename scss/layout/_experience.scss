@@ -1,0 +1,28 @@
+.experience {
+    padding: 150px 0;
+
+    &-subtitle {
+        margin: 0 0 16px;
+    }
+
+    &-title {
+        text-align: left;
+    }
+
+    &-content {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+
+        &:nth-of-type(odd){
+            flex-direction: row-reverse;
+        }
+
+        p {
+            margin-top: 30px;
+            width: 100%;
+            max-width: 418px;
+        }
+    }
+
+}

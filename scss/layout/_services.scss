@@ -1,0 +1,64 @@
+.services{
+
+    padding: 150px 0;
+
+    &-title {
+        max-width: 904px;
+        width: 100%;
+        margin: 0 auto 64px;
+    }
+
+    &-projects {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px 20px;
+        row-gap: 30px;
+        column-gap: 20px;
+    }
+    
+    .project {
+        max-width: 420px;
+        width: 100%;
+        height: 412px;
+        position: relative;
+        box-shadow: 0 4px 6px -2px rgba(16, 24, 40, 0.03), 0 12px 20px -4px rgba(16, 24, 40, 0.15);
+        background: $colorWite;
+        border: 1px solid #eff4f9;
+        border-radius: 12px;
+
+        div{
+            padding: 24px;
+        }
+
+        h3 {
+            font-weight: 600;
+            font-size: 28px;
+            line-height: 1.14;
+            letter-spacing: -0.01em;
+            color: $colorTitle;
+            margin-bottom: 10px;
+        }
+
+        p {
+            line-height: 1.5;
+            letter-spacing: -0.01em;
+            color: #707d8e;
+            margin-bottom: 20px;
+        }
+
+        a {
+            position: absolute;
+            left: 24px;
+            bottom: 24px;
+            width: 109px;
+            height: 20px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 1.25;
+            color: $colorTitle;
+            display: block;
+            background: url(../img/circle-arrow-right.svg) no-repeat right center;
+        }
+    }
+}
