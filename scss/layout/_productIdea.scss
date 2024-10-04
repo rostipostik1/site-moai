@@ -1,0 +1,68 @@
+.productIdea {
+    &-wrapper {
+        display: flex;
+        gap: 20px;
+    }
+
+    &-idea {
+        height: 670px;
+        background-color: aqua;
+        max-width: 420px;
+        width: 100%;
+        border-radius: 30px;
+        padding-top: 240px;
+    }
+
+    &-content {
+        position: relative;
+        padding: 50px 24px 0;
+
+        .title {
+            display: block;
+            text-align: center;
+            font-size: 40px;
+            line-height: 1.4;
+            letter-spacing: -0.02em;
+            color: $colorTitle;
+        }
+
+        .text {
+            position: absolute;
+            bottom: 50px;
+            text-align: center;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 372px;
+        }
+    }
+
+    .product {
+        background: url(../img/type-mashin.jpg) no-repeat center top;
+
+        .productIdea-content {
+            background: linear-gradient(121deg, #f1bc00 0%, #f7cca4 100%);
+            border-radius: 30px;
+            height: 430px;
+        }
+    }
+
+    .faunder {
+        background: url(../img/rectangle.jpg) no-repeat center top;
+
+        .productIdea-content {
+            background: linear-gradient(118deg, #937bff 0%, #c1b4ff 100%);
+            border-radius: 30px;
+            height: 430px;
+        }
+    }
+
+    .scale {
+        background: url(../img/scale.jpg) no-repeat center top;
+
+        .productIdea-content {
+            background: linear-gradient(118deg, #6ff440 0%, #e6f7a4 100%);
+            border-radius: 30px;
+            height: 430px;
+        }
+    }
+}
