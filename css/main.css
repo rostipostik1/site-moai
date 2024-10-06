@@ -260,6 +260,10 @@ body {
   margin: 0 auto;
 }
 
+.padding-large {
+  padding: 150px 0;
+}
+
 .subtitle {
   display: block;
   width: 185px;
@@ -947,11 +951,16 @@ body {
 }
 .productIdea-idea {
   height: 670px;
-  background-color: aqua;
   max-width: 420px;
   width: 100%;
   border-radius: 30px;
   padding-top: 240px;
+  transition: 0.3s linear;
+  cursor: pointer;
+}
+.productIdea-idea:hover {
+  box-shadow: 7px 9px 10px 4px rgba(0, 0, 0, 0.4705882353);
+  transform: scale(1.02);
 }
 .productIdea-content {
   position: relative;
