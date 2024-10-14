@@ -20,11 +20,19 @@
         line-height: 1.12;
         letter-spacing: -0.01em;
         color: #DFF0E1;
-        background-image: radial-gradient(123.44% 123.44% at 56.63%  100.00%, rgb(223, 240, 225) 6.77%, rgb(255, 255, 255) 100%);
+        background-image: radial-gradient(123.44% 123.44% at 56.63% 100.00%, rgb(223, 240, 225) 6.77%, rgb(255, 255, 255) 100%);
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: rgb(0 0 0 / 39%);
         width: 967px;
+
+        span {
+            font-size: 18px;
+            line-height: 1.6;
+            letter-spacing: -0.01em;
+            color: #fff;
+            display: block;
+        }
     }
 
     &__link {
