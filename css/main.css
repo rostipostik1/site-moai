@@ -1053,4 +1053,45 @@ body {
   border-radius: 10px;
   padding: 6px 10px;
   border: 1px solid #7f7f7f;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #dfe4ef;
+}
+.footer .logo figure {
+  width: 200px;
+  margin-bottom: 30px;
+}
+.footer .logo span {
+  display: block;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 1.33;
+  letter-spacing: -0.01em;
+  background: linear-gradient(180deg, rgba(42, 46, 51, 0.62) 0%, #000 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.footer-title {
+  font-weight: 500;
+  line-height: 1.25;
+  color: #000;
+  display: block;
+  margin-bottom: 20px;
+}
+.footer-menu a {
+  font-size: 14px;
+  line-height: 1.43;
+  color: #1d1a4e;
+}
+.footer-menu li:not(last-child) {
+  margin-bottom: 10px;
+}
+.footer-social {
+  display: flex;
+  gap: 30px;
 }/*# sourceMappingURL=main.css.map */
