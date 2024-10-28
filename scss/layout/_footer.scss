@@ -3,7 +3,6 @@
         display: flex;
         justify-content: space-between;
         padding-bottom: 50px;
-        border-bottom: 1px solid #dfe4ef;
     }
 
     .logo figure {
@@ -45,4 +44,58 @@
         display: flex;
         gap: 30px;
     }
+
+    &-middle {
+        display: flex;
+        justify-content: space-between;
+        padding: 50px 0;
+        gap: 80px;
+        border-bottom: 1px solid #dfe4ef;
+        border-top: 1px solid #dfe4ef;
+
+        .block {
+            display: flex;
+            gap: 50px;
+        }
+
+        
+    }
+
+    &-info span {
+        display: block;
+        margin-bottom: 0px;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 1.14;
+        letter-spacing: -0.01em;
+        background: linear-gradient(180deg, rgba(42, 46, 51, 0.62) 0%, #000 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    &-subtitle {
+        color: #707d8e;
+        font-weight: 500;
+        line-height: 1.25;
+        margin-bottom: 10px;
+    }
+
+
+    &-head {
+        width: 276px;
+        font-size: 18px;
+        line-height: 1.44;
+        letter-spacing: -0.01em;
+        color: #2a2e33;
+        font-style: normal;
+
+        a {
+            font-size: 18px;
+            line-height: 1.44;
+            letter-spacing: -0.01em;
+            color: #2a2e33;
+        }
+    } 
+
 }

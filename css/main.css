@@ -1059,7 +1059,6 @@ body {
   display: flex;
   justify-content: space-between;
   padding-bottom: 50px;
-  border-bottom: 1px solid #dfe4ef;
 }
 .footer .logo figure {
   width: 200px;
@@ -1094,4 +1093,48 @@ body {
 .footer-social {
   display: flex;
   gap: 30px;
+}
+.footer-middle {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0;
+  gap: 80px;
+  border-bottom: 1px solid #dfe4ef;
+  border-top: 1px solid #dfe4ef;
+}
+.footer-middle .block {
+  display: flex;
+  gap: 50px;
+}
+.footer-info span {
+  display: block;
+  margin-bottom: 0px;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 1.14;
+  letter-spacing: -0.01em;
+  background: linear-gradient(180deg, rgba(42, 46, 51, 0.62) 0%, #000 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.footer-subtitle {
+  color: #707d8e;
+  font-weight: 500;
+  line-height: 1.25;
+  margin-bottom: 10px;
+}
+.footer-head {
+  width: 276px;
+  font-size: 18px;
+  line-height: 1.44;
+  letter-spacing: -0.01em;
+  color: #2a2e33;
+  font-style: normal;
+}
+.footer-head a {
+  font-size: 18px;
+  line-height: 1.44;
+  letter-spacing: -0.01em;
+  color: #2a2e33;
 }/*# sourceMappingURL=main.css.map */
