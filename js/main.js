@@ -22,3 +22,7 @@ $(document).ready(function () {
 
     })
 });
+
+const year = document.querySelector('.year')
+const data = new Date()
+year.textContent = data.getFullYear()

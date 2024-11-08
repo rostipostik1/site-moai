@@ -1137,4 +1137,26 @@ body {
   line-height: 1.44;
   letter-spacing: -0.01em;
   color: #2a2e33;
+}
+.footer-bottom {
+  display: flex;
+  padding: 20px 0 55px;
+  justify-content: space-between;
+  gap: 50px;
+}
+.footer-bottom .copyright {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: -0.01em;
+  color: #1d1a4e;
+}
+.footer-bottom .footer-menu {
+  display: flex;
+  gap: 50px;
+  font-size: 14px;
+  line-height: 1.43;
+  color: #1d1a4e;
+}
+.footer-bottom .footer-menu li {
+  margin-bottom: 0;
 }/*# sourceMappingURL=main.css.map */
