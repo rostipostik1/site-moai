@@ -292,6 +292,10 @@ body {
   margin-bottom: 64px;
 }
 
+.header-gradient {
+  background: url(../img/bg-header.png) no-repeat center, linear-gradient(176deg, #ffeded 0%, rgba(255, 237, 237, 0) 100%), linear-gradient(105deg, #fff 0%, rgba(255, 255, 255, 0) 100%);
+}
+
 /* Slider */
 .slick-slider {
   position: relative;
@@ -379,7 +383,6 @@ body {
 }
 
 .header {
-  background: url(../img/bg-header.png) no-repeat center, linear-gradient(176deg, #ffeded 0%, rgba(255, 237, 237, 0) 100%), linear-gradient(105deg, #fff 0%, rgba(255, 255, 255, 0) 100%);
   position: relative;
 }
 .header-wrapper {
@@ -435,12 +438,11 @@ body {
 .header-link {
   border: 1px solid #0c0d0e;
   border-radius: 32px;
-  padding: 8px 0px;
-  width: 155px;
+  padding: 8px 0px 8px 23px;
+  width: 178px;
   height: 50px;
-  background: linear-gradient(180deg, #303439 17.71%, #000812 97.4%);
+  background: url(../img/arrow-services.svg) no-repeat right 20px center, linear-gradient(180deg, #303439 17.71%, #000812 97.4%);
   display: block;
-  text-align: center;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.78;
