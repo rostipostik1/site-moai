@@ -1057,6 +1057,31 @@ body {
   border: 1px solid #7f7f7f;
 }
 
+.service-subtitle {
+  width: 234px;
+  line-height: 1.5;
+  background: linear-gradient(180deg, #3db54a 0%, #d0ea16 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.service-content {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 40px;
+  align-items: center;
+}
+.service-content .content {
+  max-width: 630px;
+  width: 100%;
+  padding: 51px 99px 51px 40px;
+}
+.service-content figure {
+  padding-right: 54px;
+  max-width: 630px;
+  width: 100%;
+}
+
 .footer-top {
   display: flex;
   justify-content: space-between;
