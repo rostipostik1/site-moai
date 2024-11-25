@@ -47,9 +47,11 @@
         }
 
         .tab-pils {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(min-content, max-content));
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
             gap: 10px;
+            margin-bottom: 50px;
 
             li{
                 font-size: 14px;
@@ -58,8 +60,6 @@
                 border: 1px solid #e0e0e0;
                 border-radius: 100px;
                 padding: 10px 20px;
-                width: 256px;
-                height: 40px;
             }
         }
 
