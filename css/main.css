@@ -1089,6 +1089,33 @@ body {
   width: 100%;
   padding: 51px 99px 51px 40px;
 }
+.service-content .content h3 {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 1.14;
+  color: #1d1a4e;
+}
+.service-content .content p {
+  font-size: 40px;
+  line-height: 1.4;
+  color: #707d8e;
+  margin: 15px 0 50px;
+}
+.service-content .tab-pils {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min-content, max-content));
+  gap: 10px;
+}
+.service-content .tab-pils li {
+  font-size: 14px;
+  line-height: 143%;
+  color: #000;
+  border: 1px solid #e0e0e0;
+  border-radius: 100px;
+  padding: 10px 20px;
+  width: 256px;
+  height: 40px;
+}
 .service-content figure {
   padding-right: 54px;
   max-width: 630px;

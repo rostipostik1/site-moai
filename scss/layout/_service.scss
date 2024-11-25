@@ -22,7 +22,7 @@
             margin-bottom: 250px;
         }
 
-        &:nth-child(even):not(:first-child){
+        &:nth-child(even):not(:first-child) {
             margin-top: 250px;
         }
 
@@ -31,6 +31,36 @@
             width: 100%;
             padding: 51px 99px 51px 40px;
 
+            h3 {
+                font-weight: 600;
+                font-size: 28px;
+                line-height: 1.14;
+                color: $colorTitle;
+            }
+
+            p{
+                font-size: 40px;
+                line-height: 1.4;
+                color: #707d8e;
+                margin: 15px 0 50px;
+            }
+        }
+
+        .tab-pils {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(min-content, max-content));
+            gap: 10px;
+
+            li{
+                font-size: 14px;
+                line-height: 143%;
+                color: #000;
+                border: 1px solid #e0e0e0;
+                border-radius: 100px;
+                padding: 10px 20px;
+                width: 256px;
+                height: 40px;
+            }
         }
 
         figure {
