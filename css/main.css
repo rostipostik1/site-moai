@@ -296,6 +296,10 @@ body {
   background: url(../img/bg-header.png) no-repeat center, linear-gradient(176deg, #ffeded 0%, rgba(255, 237, 237, 0) 100%), linear-gradient(105deg, #fff 0%, rgba(255, 255, 255, 0) 100%);
 }
 
+.p-150 {
+  padding: 150px 0;
+}
+
 /* Slider */
 .slick-slider {
   position: relative;
@@ -1065,11 +1069,20 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.service > .container {
+  padding-bottom: 100px;
+}
 .service-content {
   display: flex;
-  flex-direction: row-reverse;
   gap: 40px;
   align-items: center;
+}
+.service-content:nth-child(even) {
+  flex-direction: row-reverse;
+  margin-bottom: 250px;
+}
+.service-content:nth-child(even):not(:first-child) {
+  margin-top: 250px;
 }
 .service-content .content {
   max-width: 630px;
