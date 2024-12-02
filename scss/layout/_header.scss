@@ -24,6 +24,12 @@
     height: 32px;
   }
 
+  &-link {
+    background: $colorDark;
+    text-align: center;
+    padding: 8px 0;
+  }
+
   .nav {
     flex: 0.70;
     display: flex;

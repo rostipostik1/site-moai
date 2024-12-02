@@ -13,6 +13,10 @@ a {
     text-decoration: none;
 }
 
+html,body {
+     scroll-behavior:smooth;   
+}
+
 body {
     @include ffinstrument(16px, 400);
 }
@@ -77,4 +81,19 @@ body {
     line-height: 1.78;
     letter-spacing: .04em;
     color: #fff;
+}
+
+.arrow-up{
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    right: -100px;
+    bottom: 100px;
+    z-index: 3;
+    background: $colorGrey url(../img/arrow-up.svg) no-repeat center;
+    transition: .3s linear;
+
+    &.active{
+        right: 50px;
+    }
 }

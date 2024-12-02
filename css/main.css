@@ -248,6 +248,10 @@ a {
   text-decoration: none;
 }
 
+html, body {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Instrument Sans", sans-serif;
   font-size: 16px;
@@ -313,6 +317,20 @@ body {
   line-height: 1.78;
   letter-spacing: 0.04em;
   color: #fff;
+}
+
+.arrow-up {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  right: -100px;
+  bottom: 100px;
+  z-index: 3;
+  background: #615e59 url(../img/arrow-up.svg) no-repeat center;
+  transition: 0.3s linear;
+}
+.arrow-up.active {
+  right: 50px;
 }
 
 /* Slider */
@@ -421,6 +439,11 @@ body {
 .header-logo {
   width: 97px;
   height: 32px;
+}
+.header-link {
+  background: #010902;
+  text-align: center;
+  padding: 8px 0;
 }
 .header .nav {
   flex: 0.7;
@@ -1101,6 +1124,9 @@ body {
   line-height: 1.4;
   color: #707d8e;
   margin: 15px 0 50px;
+}
+.service-content .btn-serice {
+  text-align: left;
 }
 .service-content .tab-pils {
   display: flex;
