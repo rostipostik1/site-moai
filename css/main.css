@@ -304,6 +304,10 @@ body {
   padding: 150px 0;
 }
 
+.p-50 {
+  padding: 50px 0;
+}
+
 .link--black {
   border: 1px solid #0c0d0e;
   border-radius: 32px;
@@ -320,14 +324,18 @@ body {
 }
 
 .arrow-up {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   position: fixed;
   right: -100px;
   bottom: 100px;
   z-index: 3;
-  background: #615e59 url(../img/arrow-up.svg) no-repeat center;
+  background: #dcebfe url(../img/arrow-up.svg) no-repeat center;
   transition: 0.3s linear;
+  border-radius: 50%;
+  padding: 10px;
+  border: 1px solid #607D8B;
+  cursor: pointer;
 }
 .arrow-up.active {
   right: 50px;
@@ -1092,9 +1100,6 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-.service > .container {
-  padding-bottom: 100px;
 }
 .service-content {
   display: flex;

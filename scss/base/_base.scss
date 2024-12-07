@@ -67,6 +67,9 @@ body {
 .p-150{
     padding: 150px 0;
 }
+.p-50{
+    padding: 50px 0;
+}
 
 .link--black{
     border: 1px solid #0c0d0e;
@@ -84,14 +87,18 @@ body {
 }
 
 .arrow-up{
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     position: fixed;
     right: -100px;
     bottom: 100px;
     z-index: 3;
-    background: $colorGrey url(../img/arrow-up.svg) no-repeat center;
+    background: #dcebfe url(../img/arrow-up.svg) no-repeat center;
     transition: .3s linear;
+    border-radius: 50%;
+    padding: 10px;
+    border: 1px solid #607D8B;
+    cursor: pointer;
 
     &.active{
         right: 50px;
