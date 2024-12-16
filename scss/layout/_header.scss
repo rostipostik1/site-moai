@@ -61,7 +61,8 @@
         transition: $transition;
       }
 
-      &:hover::after {
+      &:hover::after,
+      &.active::after {
         background-color: #d11763;
 
       }

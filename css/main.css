@@ -482,7 +482,7 @@ body {
   transform: translateX(-50%);
   transition: 0.3s linear;
 }
-.header .menu-link:hover::after {
+.header .menu-link:hover::after, .header .menu-link.active::after {
   background-color: #d11763;
 }
 .header-content {
