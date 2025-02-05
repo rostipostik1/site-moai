@@ -41,3 +41,10 @@ btnUp.addEventListener('click', () => {
 const year = document.querySelector('.year')
 const data = new Date()
 year.textContent = data.getFullYear()
+
+const headerSticky = document.querySelector('.header-wrapper')
+
+window.addEventListener('scroll', () => {
+    if(window.scrollY>0) headerSticky.classList.add('sticky')
+        else headerSticky.classList.remove('sticky')
+})
