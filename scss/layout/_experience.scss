@@ -34,6 +34,10 @@
         }
     }
 
+    &-content__about {
+        justify-content: space-between;
+    }
+
     .content {
         max-width: 629px;
         width: 100%;

@@ -508,7 +508,6 @@ body {
   text-align: center;
   -webkit-backdrop-filter: blur(9px);
           backdrop-filter: blur(9px);
-  background: linear-gradient(180deg, #fff 0%, #d7e8fd 100%);
   line-height: 1.5;
   letter-spacing: -0.01em;
   background: linear-gradient(0deg, #d11763 0%, #f34d33 100%);
@@ -547,6 +546,14 @@ body {
 }
 .header .link-scrolle:hover {
   background: url(../img/btn-black.png) no-repeat bottom center;
+}
+
+.header-wrapper-bottom.about .header-content {
+  max-width: 650px;
+}
+.header-wrapper-bottom.about .header-img {
+  max-width: 488px;
+  width: 100%;
 }
 
 .testimonials {
@@ -981,6 +988,9 @@ body {
   line-height: 1.44;
   letter-spacing: -0.01em;
   color: #1d1a4e;
+}
+.experience-content__about {
+  justify-content: space-between;
 }
 .experience .content {
   max-width: 629px;
