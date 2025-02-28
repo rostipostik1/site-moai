@@ -1273,6 +1273,44 @@ body {
   width: 100%;
 }
 
+.offer .cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  row-gap: 30px;
+}
+.offer .card-img {
+  max-width: 430px;
+  width: 100%;
+  position: relative;
+}
+.offer .card-img img {
+  border-radius: 30px;
+}
+.offer .card-img figcaption {
+  position: absolute;
+  left: 30px;
+  bottom: 30px;
+  width: 360px;
+  color: #fff;
+}
+.offer .card-img .card-title {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 1.14;
+  letter-spacing: -0.01em;
+}
+.offer .card-img .card-text {
+  display: none;
+  opacity: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.44;
+  letter-spacing: -0.01em;
+}
+
 .footer-top {
   display: flex;
   justify-content: space-between;

@@ -1,0 +1,44 @@
+.offer {
+
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap: 20px;
+        row-gap: 30px;
+    }
+
+    .card-img {
+        max-width: 430px;
+        width: 100%;
+        position: relative;
+
+        img{
+            border-radius: 30px;
+        }
+
+        figcaption {
+            position: absolute;
+            left: 30px;
+            bottom: 30px;
+            width: 360px;
+            color: $colorWite;
+        }
+
+        .card-title {
+            font-weight: 600;
+            font-size: 28px;
+            line-height: 1.14;
+            letter-spacing: -0.01em;
+        }
+
+        .card-text {
+            display: none;
+            opacity: 0;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 1.44;
+            letter-spacing: -0.01em;
+        }
+    }
+}
