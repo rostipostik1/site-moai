@@ -1282,12 +1282,26 @@ body {
   row-gap: 30px;
 }
 .offer .card-img {
-  max-width: 430px;
+  max-width: 420px;
   width: 100%;
   position: relative;
+  border-radius: 30px;
+  transition: 0.3s linear;
+}
+.offer .card-img::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 34.67%, rgba(0, 0, 0, 0.3) 65.62%, rgba(0, 0, 0, 0.7) 100%);
 }
 .offer .card-img img {
   border-radius: 30px;
+  height: 100%;
 }
 .offer .card-img figcaption {
   position: absolute;
@@ -1295,6 +1309,7 @@ body {
   bottom: 30px;
   width: 360px;
   color: #fff;
+  z-index: 2;
 }
 .offer .card-img .card-title {
   font-weight: 600;
@@ -1303,14 +1318,53 @@ body {
   letter-spacing: -0.01em;
 }
 .offer .card-img .card-text {
-  display: none;
-  opacity: 0;
+  visibility: hidden;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.44;
   letter-spacing: -0.01em;
+  overflow: hidden;
+  animation: fadeout 0.3s linear forwards;
+}
+.offer .card-img:hover .card-text {
+  visibility: visible;
+  animation: fadein 0.3s linear forwards;
+}
+.offer-subtitle {
+  width: 257px;
+  background: linear-gradient(0deg, #d11763 0%, #f34d33 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.offer-title {
+  margin-bottom: 50px;
 }
 
+@keyframes fadein {
+  from {
+    height: 0;
+    opacity: 0;
+    margin: 0;
+  }
+  to {
+    height: 78px;
+    opacity: 1;
+    margin: 10px;
+  }
+}
+@keyframes fadeout {
+  from {
+    height: 78;
+    opacity: 1;
+    margin: 10px;
+  }
+  to {
+    height: 0;
+    opacity: 0;
+    margin: 0;
+  }
+}
 .footer-top {
   display: flex;
   justify-content: space-between;
