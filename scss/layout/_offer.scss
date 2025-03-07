@@ -13,7 +13,7 @@
         width: 100%;
         position: relative;
         border-radius: 30px;
-        transition: .3s linear;
+        cursor: pointer;
 
         &::before {
             content: '';
@@ -23,8 +23,10 @@
             left: 0;
             width: 100%;
             height: 100%;
-            border-radius: 20px;
+            border-radius: 27px;
             background: linear-gradient(180deg, rgba(0, 0, 0, 0) 34.67%, rgba(0, 0, 0, 0.3) 65.62%, rgba(0, 0, 0, 0.7) 100%);
+            opacity: 0;
+            transition: .5s linear;
         }
 
 
@@ -47,23 +49,33 @@
             font-size: 28px;
             line-height: 1.14;
             letter-spacing: -0.01em;
+            transform: translateY(0);
+            transition: .2s linear;
         }
 
         .card-text {
-            visibility: hidden;
             font-weight: 400;
             font-size: 18px;
             line-height: 1.44;
             letter-spacing: -0.01em;
             overflow: hidden;
+            max-height: 0;
             animation: fadeout .3s linear forwards;
+
         }
 
         &:hover {
-
+            .card-title{
+                transform: translateY(-10px);
+            }
             .card-text {
-                visibility: visible;
                 animation: fadein .3s linear forwards;
+            }
+
+            &::before {
+                opacity: 1;
+            
+
             }
         }
     }
@@ -83,25 +95,21 @@
 
 @keyframes fadein{
     from{
-        height: 0;
+        max-height: 0;
         opacity: 0;
-        margin: 0;
     }
     to{
-        height: 78px;
+        max-height: 90px;
         opacity: 1;
-        margin: 10px;
     }
 }
 @keyframes fadeout{
     from{
-        height: 78;
+        max-height: 90px;
         opacity: 1;
-        margin: 10px;
     }
     to{
-        height: 0;
+        max-height: 0;
         opacity: 0;
-        margin: 0;
     }
 }
