@@ -1170,6 +1170,50 @@ body {
   border-radius: 30px;
   height: 430px;
 }
+.productIdea .team-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.productIdea .team-idea {
+  max-width: 354px;
+  width: 100%;
+  position: relative;
+  border-radius: 20px;
+  transition: 0.3s linear;
+  cursor: pointer;
+}
+.productIdea .team-idea img {
+  border-radius: 20px;
+  height: 100%;
+}
+.productIdea .team-idea .productIdea-content {
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  z-index: 2;
+  color: #fff;
+  padding: 0;
+}
+.productIdea .team-idea .title-name {
+  display: block;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 1.14;
+  letter-spacing: -0.01em;
+  margin-bottom: 5px;
+}
+.productIdea .team-idea .text-job {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 3.11;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+.productIdea .team-idea:hover {
+  box-shadow: 0px 0px 10px 8px rgba(0, 0, 0, 0.4784313725);
+}
 
 .delivered-wrapper {
   display: flex;
