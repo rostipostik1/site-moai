@@ -108,3 +108,12 @@ body {
         right: 50px;
     }
 }
+
+.text-background {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
