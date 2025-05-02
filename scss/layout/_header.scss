@@ -2,10 +2,35 @@
   position: relative;
 
   &-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    position: absolute;
+    left: 0;
+    width: 100%;
 
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0;
+      background: transparent;
+      transition: .3s linear;
+
+      @media(max-width: 1350px) {
+        padding: 0 15px;
+      }
+
+      &.active {
+        padding: 27px 30px;
+        border-radius: 80px;
+        backdrop-filter: blur(14px);
+        box-shadow: 0 12px 20px -4px rgba(16, 24, 40, 0.05);
+        background: rgba(255, 255, 255, 0.9);
+      }
+    }
+
+    &.fixed {
+      position: fixed;
+      z-index: 5;
+    }
   }
 
   &-wrapper-bottom {
@@ -13,6 +38,12 @@
     justify-content: space-between;
     align-items: center;
     padding: 94px 0 179px;
+    gap: 20px;
+
+    @media(max-width: 1350px) {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
   }
 
   &-fixed {
@@ -40,14 +71,16 @@
   }
 
   .nav {
-    flex: 0.70;
+    flex: 1;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
   }
 
   .menu {
     display: flex;
+    flex: 1;
+    justify-content: center;
 
     &-link {
       padding: 17px;

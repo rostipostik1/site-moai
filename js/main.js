@@ -25,9 +25,9 @@ $(document).ready(function () {
 
 const btnUp = document.querySelector('.arrow-up')
 window.addEventListener('scroll', () => {
-    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300){
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
         btnUp.classList.add('active')
-    }else{
+    } else {
         btnUp.classList.remove('active')
     }
 })
@@ -38,13 +38,33 @@ btnUp.addEventListener('click', () => {
 })
 
 
-const year = document.querySelector('.year')
+const year = document?.querySelector('.year')
 const data = new Date()
-year.textContent = data.getFullYear()
+if(year) {
+    try {
+        year.textContent = data.getFullYear()
+    } catch (error) {
+        console.log(error);
+        
+    }
+}
 
-const headerSticky = document.querySelector('.header-wrapper')
 
-window.addEventListener('scroll', () => {
-    if(window.scrollY>0) headerSticky.classList.add('sticky')
-        else headerSticky.classList.remove('sticky')
-})
+
+// menu fixed
+
+const headerFixed = document?.querySelector('.header-wrapper')
+// console.log(headerFixed);
+
+if (headerFixed) {
+    try {
+        window.addEventListener('scroll', () => {
+            window.scrollY > 10
+                ? headerFixed.classList.add('fixed')
+                : headerFixed.classList.remove('fixed');
+        });
+    } catch (error) {
+        console.error('Scroll handler failed:', error);
+    }
+}
+
