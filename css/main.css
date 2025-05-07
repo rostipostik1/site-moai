@@ -358,6 +358,10 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
+.header-img__radius img {
+  border-radius: 30px;
+}
+
 /* Slider */
 .slick-slider {
   position: relative;
