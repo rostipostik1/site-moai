@@ -9,7 +9,7 @@
     }
 
     .card-img {
-        max-width: 310px;
+        max-width: 420px;
         width: 100%;
         position: relative;
         border-radius: 30px;
@@ -45,7 +45,6 @@
         }
 
         .card-title {
-            width: 250px;
             font-weight: 600;
             font-size: 28px;
             line-height: 1.14;
@@ -55,7 +54,6 @@
         }
 
         .card-text {
-            width: 250px;
             font-weight: 400;
             font-size: 18px;
             line-height: 1.44;
@@ -83,7 +81,7 @@
     }
 
     &-subtitle {
-        width: 300px;
+        width: 257px;
         background: linear-gradient(0deg, #d11763 0%, #f34d33 100%);
         background-clip: text;
         -webkit-background-clip: text;
