@@ -5,31 +5,31 @@
     position: absolute;
     left: 0;
     width: 100%;
+    transition: linear;
+    
+
 
     .container {
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding: 0;
-      background: transparent;
       transition: .3s linear;
-
-      @media(max-width: 1350px) {
-        padding: 0 15px;
-      }
-
-      &.active {
-        padding: 27px 30px;
-        border-radius: 80px;
-        backdrop-filter: blur(14px);
-        box-shadow: 0 12px 20px -4px rgba(16, 24, 40, 0.05);
-        background: rgba(255, 255, 255, 0.9);
-      }
+      background: transparent;
+      max-width: 1300px;
+      width: 100%;
+      margin: 0 auto;
     }
 
     &.fixed {
       position: fixed;
       z-index: 5;
+      padding: 27px 30px;
+      border-radius: 80px;
+      backdrop-filter: blur(40px);
+      box-shadow: 0 12px 20px -4px rgba(16, 24, 40, 0.05);
+      background: rgba(255, 255, 255, 0.9);
+      transition: .3s linear;
     }
   }
 

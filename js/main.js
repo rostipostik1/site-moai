@@ -56,15 +56,15 @@ if(year) {
 const headerFixed = document?.querySelector('.header-wrapper')
 // console.log(headerFixed);
 
-// if (headerFixed) {
-//     try {
-//         window.addEventListener('scroll', () => {
-//             window.scrollY > 10
-//                 ? headerFixed.classList.add('fixed')
-//                 : headerFixed.classList.remove('fixed');
-//         });
-//     } catch (error) {
-//         console.error('Scroll handler failed:', error);
-//     }
-// }
+if (headerFixed) {
+    try {
+        window.addEventListener('scroll', () => {
+            window.scrollY > 10
+                ? headerFixed.classList.add('fixed')
+                : headerFixed.classList.remove('fixed');
+        });
+    } catch (error) {
+        console.error('Scroll handler failed:', error);
+    }
+}
 
