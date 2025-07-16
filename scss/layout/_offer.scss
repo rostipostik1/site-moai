@@ -9,7 +9,7 @@
     }
 
     .card-img {
-        max-width: 310px;
+        max-width: 420px;
         width: 100%;
         position: relative;
         border-radius: 30px;
@@ -101,13 +101,13 @@
         opacity: 0;
     }
     to{
-        max-height: 90px;
+        max-height: 97px;
         opacity: 1;
     }
 }
 @keyframes fadeout{
     from{
-        max-height: 90px;
+        max-height: 97px;
         opacity: 1;
     }
     to{
