@@ -9,32 +9,32 @@
     transition: linear;
   }
 
-    &-fixed {
+  &-fixed {
+    transition: .3s linear;
+    background: transparent;
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+
+  .fixed {
+    position: fixed;
+    z-index: 5;
+
+    .header-fixed {
+      padding: 27px 30px;
+      border-radius: 80px;
+      backdrop-filter: blur(40px);
+      box-shadow: 0 12px 20px -4px rgba(16, 24, 40, 0.05);
+      background: rgba(255, 255, 255, 0.9);
       transition: .3s linear;
-      background: transparent;
-      max-width: 1300px;
-      width: 100%;
-      margin: 0 auto;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
     }
 
-
-    .fixed {
-      position: fixed;
-      z-index: 5;
-
-      .header-fixed {
-        padding: 27px 30px;
-        border-radius: 80px;
-        backdrop-filter: blur(40px);
-        box-shadow: 0 12px 20px -4px rgba(16, 24, 40, 0.05);
-        background: rgba(255, 255, 255, 0.9);
-        transition: .3s linear;
-      }
-
-    }
+  }
 
   &-wrapper-bottom {
     display: flex;
@@ -74,12 +74,46 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media (max-width: 850px) {
+      position: absolute;
+      top: -30px;
+      left: 0;
+      width: 100%;
+      background: #fff;
+      height: 100vh;
+      z-index: 3;
+      flex-direction: column;
+      justify-content: flex-start;
+      gap: 50px;
+      padding-top: 50px;
+    }
+  }
+
+  .mobile {
+    display: none;
+    width: 60px;
+    height: 40px;
+    background: url(../img/burger.svg) no-repeat center;
+
+    @media (max-width: 850px) {
+      display: block;
+      position: relative;
+      z-index: 5;
+    }
   }
 
   .menu {
     display: flex;
     flex: 1;
     justify-content: center;
+
+    @media (max-width: 850px) {
+      flex: 0;
+      flex-direction: column;
+      gap: 50px;
+      align-items: center;
+    }
 
     &-link {
       padding: 17px;

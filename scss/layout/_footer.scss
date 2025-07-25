@@ -3,6 +3,12 @@
         display: flex;
         justify-content: space-between;
         padding-bottom: 50px;
+
+        @media(max-width: 1300px) {
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 70px;
+        }
     }
 
     .logo figure {
@@ -53,12 +59,16 @@
         border-bottom: 1px solid #dfe4ef;
         border-top: 1px solid #dfe4ef;
 
+        @media(max-width: 1300px) {
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 70px;
+        }
+
         .block {
             display: flex;
             gap: 50px;
         }
-
-
     }
 
     &-info span {
@@ -104,6 +114,12 @@
         justify-content: space-between;
         gap: 50px;
 
+        @media(max-width: 1300px) {
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 70px;
+        }
+
         .copyright {
             font-size: 14px;
             line-height: 1.71;
@@ -118,7 +134,7 @@
             line-height: 1.43;
             color: $colorTitle;
 
-            li{
+            li {
                 margin-bottom: 0;
             }
         }

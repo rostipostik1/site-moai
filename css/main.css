@@ -518,10 +518,46 @@ body {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 850px) {
+  .header .nav {
+    position: absolute;
+    top: -30px;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    height: 100vh;
+    z-index: 3;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 50px;
+    padding-top: 50px;
+  }
+}
+.header .mobile {
+  display: none;
+  width: 60px;
+  height: 40px;
+  background: url(../img/burger.svg) no-repeat center;
+}
+@media (max-width: 850px) {
+  .header .mobile {
+    display: block;
+    position: relative;
+    z-index: 5;
+  }
+}
 .header .menu {
   display: flex;
   flex: 1;
   justify-content: center;
+}
+@media (max-width: 850px) {
+  .header .menu {
+    flex: 0;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+  }
 }
 .header .menu-link {
   padding: 17px;
@@ -1377,7 +1413,7 @@ body {
   row-gap: 30px;
 }
 .offer .card-img {
-  max-width: 310px;
+  max-width: 420px;
   width: 100%;
   position: relative;
   border-radius: 30px;
@@ -1453,13 +1489,13 @@ body {
     opacity: 0;
   }
   to {
-    max-height: 90px;
+    max-height: 97px;
     opacity: 1;
   }
 }
 @keyframes fadeout {
   from {
-    max-height: 90px;
+    max-height: 97px;
     opacity: 1;
   }
   to {
@@ -1716,6 +1752,13 @@ body {
   justify-content: space-between;
   padding-bottom: 50px;
 }
+@media (max-width: 1300px) {
+  .footer-top {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 70px;
+  }
+}
 .footer .logo figure {
   width: 200px;
   margin-bottom: 30px;
@@ -1758,6 +1801,13 @@ body {
   border-bottom: 1px solid #dfe4ef;
   border-top: 1px solid #dfe4ef;
 }
+@media (max-width: 1300px) {
+  .footer-middle {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 70px;
+  }
+}
 .footer-middle .block {
   display: flex;
   gap: 50px;
@@ -1799,6 +1849,13 @@ body {
   padding: 20px 0 55px;
   justify-content: space-between;
   gap: 50px;
+}
+@media (max-width: 1300px) {
+  .footer-bottom {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 70px;
+  }
 }
 .footer-bottom .copyright {
   font-size: 14px;
