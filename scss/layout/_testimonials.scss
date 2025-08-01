@@ -19,6 +19,10 @@
         max-width: 1140px;
         width: 100%;
         margin: 0 auto;
+
+        @media (max-width: 768px) {
+            font-size: 30px;
+        }
     }
 
 
@@ -37,13 +41,14 @@
         }
     }
 
-    .avatar{
+    .avatar {
         opacity: 0.8;
         transition: $transition;
         // background: green;
         position: relative;
+        
 
-        img{
+        img {
             width: 40px;
             height: 40px;
             transition: $transition;
@@ -51,31 +56,40 @@
             left: 50%;
             transform: translateX(-50%);
         }
-        span{
+
+        span {
             overflow: hidden;
             width: 0;
             display: block;
         }
     }
 
-    .slick-slide{
+    .slick-slide {
         margin: 0 20px;
     }
 
-    .slick-center{
-        .avatar{
+    .slick-center {
+        .avatar {
             opacity: 1;
             width: 260px;
             padding-left: 76px;
 
-            img{
+            @media (max-width: 1000px) {
+                width: 260px !important;
+                display: block !important;
+                margin: 0 auto;
+
+            }
+
+            img {
                 width: 56px;
                 height: 56px;
                 left: 0;
                 transform: translateX(0);
             }
-            span{
-              width: auto;  
+
+            span {
+                width: auto;
             }
 
             &-title {

@@ -5,7 +5,19 @@ $(document).ready(function () {
         slidesToScroll: 1,
         prevArrow: "<img class='prev slick-btn' src='./img/arrow-right.svg'>",
         nextArrow: "<img class='next slick-btn' src='./img/arrow-left.svg'>",
-        asNavFor: '.slider-avatars'
+        asNavFor: '.slider-avatars',
+
+        responsive: [
+            {
+                breakpoint: 1000,
+                settings: {
+                    arrows: false,
+                    //   autoplay: true,          // Включает автопрокрутку
+                    // autoplaySpeed: 3000,
+                }
+
+            }
+        ]
     });
     $('.slider-avatars').slick({
         arrows: false,
@@ -13,7 +25,16 @@ $(document).ready(function () {
         slidesToScroll: 1,
         centerMode: true,
         centerPadding: '60px',
-        asNavFor: '.testimonials-slider'
+        asNavFor: '.testimonials-slider',
+        responsive: [
+            {
+                breakpoint: 1000,
+                settings: {
+                    slidesToShow: 1,
+                }
+
+            }
+        ]
     });
 
     $('.quise-item').click(function () {
@@ -40,12 +61,12 @@ btnUp.addEventListener('click', () => {
 
 const year = document?.querySelector('.year')
 const data = new Date()
-if(year) {
+if (year) {
     try {
         year.textContent = data.getFullYear()
     } catch (error) {
         console.log(error);
-        
+
     }
 }
 
@@ -67,4 +88,18 @@ if (headerFixed) {
         console.error('Scroll handler failed:', error);
     }
 }
+
+// mobile menu
+
+const mobile = document.querySelector('.mobile')
+const nav = document.querySelector('.nav')
+// console.log(mobile);
+mobile.addEventListener('click', () => {
+    nav.classList.toggle('active')
+    mobile.classList.toggle('active')
+    document.body.classList.toggle('hidden')
+
+})
+
+
 

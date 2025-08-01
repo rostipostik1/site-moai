@@ -77,16 +77,24 @@
 
     @media (max-width: 850px) {
       position: absolute;
-      top: -30px;
+      top: -200%;
       left: 0;
       width: 100%;
       background: #fff;
-      height: 100vh;
+      height: 0;
       z-index: 3;
       flex-direction: column;
       justify-content: flex-start;
       gap: 50px;
       padding-top: 50px;
+      overflow: hidden;
+      transition: .3s linear;
+
+      &.active {
+        top: -30px;
+        height: 100vh;
+        
+      }
     }
   }
 
@@ -100,6 +108,11 @@
       display: block;
       position: relative;
       z-index: 5;
+      transition: .3s linear;
+
+      &.active {
+        background: url(../img/close.svg ) no-repeat center;
+      }
     }
   }
 
@@ -176,6 +189,10 @@
     letter-spacing: -0.01em;
     color: $colorBlack;
     margin-bottom: 20px;
+
+    @media (max-width: 590px) {
+      font-size: 60px;
+    }
   }
 
   &-text {

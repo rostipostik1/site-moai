@@ -261,6 +261,9 @@ body {
   font-size: 16px;
   font-weight: 400;
 }
+body.hidden {
+  overflow: hidden;
+}
 
 .container {
   max-width: 1300px;
@@ -303,6 +306,11 @@ body {
   text-align: center;
   color: #2a2e33;
   margin-bottom: 64px;
+}
+@media (max-width: 590px) {
+  .title {
+    font-size: 50px;
+  }
 }
 
 .header-gradient {
@@ -521,16 +529,22 @@ body {
 @media (max-width: 850px) {
   .header .nav {
     position: absolute;
-    top: -30px;
+    top: -200%;
     left: 0;
     width: 100%;
     background: #fff;
-    height: 100vh;
+    height: 0;
     z-index: 3;
     flex-direction: column;
     justify-content: flex-start;
     gap: 50px;
     padding-top: 50px;
+    overflow: hidden;
+    transition: 0.3s linear;
+  }
+  .header .nav.active {
+    top: -30px;
+    height: 100vh;
   }
 }
 .header .mobile {
@@ -544,6 +558,10 @@ body {
     display: block;
     position: relative;
     z-index: 5;
+    transition: 0.3s linear;
+  }
+  .header .mobile.active {
+    background: url(../img/close.svg) no-repeat center;
   }
 }
 .header .menu {
@@ -611,6 +629,11 @@ body {
   color: #000812;
   margin-bottom: 20px;
 }
+@media (max-width: 590px) {
+  .header-title {
+    font-size: 60px;
+  }
+}
 .header-text {
   font-size: 24px;
   line-height: 1.5;
@@ -666,6 +689,11 @@ body {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 768px) {
+  .testimonials p {
+    font-size: 30px;
+  }
+}
 .testimonials .slick-btn {
   position: absolute;
   top: 50%;
@@ -703,6 +731,13 @@ body {
   opacity: 1;
   width: 260px;
   padding-left: 76px;
+}
+@media (max-width: 1000px) {
+  .testimonials .slick-center .avatar {
+    width: 260px !important;
+    display: block !important;
+    margin: 0 auto;
+  }
 }
 .testimonials .slick-center .avatar img {
   width: 56px;
