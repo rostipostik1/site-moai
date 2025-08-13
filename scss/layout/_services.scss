@@ -1,4 +1,4 @@
-.services{
+.services {
 
     padding: 150px 0;
 
@@ -16,7 +16,7 @@
         row-gap: 30px;
         column-gap: 20px;
     }
-    
+
     .project {
         max-width: 420px;
         width: 100%;
@@ -27,8 +27,16 @@
         border: 1px solid #eff4f9;
         border-radius: 12px;
 
-        div{
+        @media (max-width: 450px) {
+            height: 390px;
+        }
+
+        div {
             padding: 24px;
+
+            @media (max-width: 450px) {
+                padding: 10px;
+            }
         }
 
         h3 {

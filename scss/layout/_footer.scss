@@ -9,6 +9,10 @@
             flex-wrap: wrap;
             gap: 70px;
         }
+
+        @media (max-width: 450px) {
+            justify-content: flex-start;
+        }
     }
 
     .logo figure {
@@ -68,6 +72,11 @@
         .block {
             display: flex;
             gap: 50px;
+
+            @media (max-width: 450px) {
+                flex-wrap: wrap;
+                gap: 25px;
+            }
         }
     }
 

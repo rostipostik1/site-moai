@@ -252,7 +252,8 @@ img {
   max-width: 100%;
 }
 
-html, body {
+html,
+body {
   scroll-behavior: smooth;
 }
 
@@ -310,6 +311,11 @@ body.hidden {
 @media (max-width: 590px) {
   .title {
     font-size: 50px;
+  }
+}
+@media (max-width: 450px) {
+  .title {
+    font-size: 30px;
   }
 }
 
@@ -694,6 +700,11 @@ body.hidden {
     font-size: 30px;
   }
 }
+@media (max-width: 450px) {
+  .testimonials p .testimonials p {
+    font-size: 24px;
+  }
+}
 .testimonials .slick-btn {
   position: absolute;
   top: 50%;
@@ -769,24 +780,55 @@ body.hidden {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+@media (max-width: 980px) {
+  .strategize-subtitle {
+    margin: 0 auto;
+  }
+}
 .strategize-title {
   max-width: 641px;
   width: 100%;
   text-align: left;
 }
+@media (max-width: 980px) {
+  .strategize-title {
+    max-width: 100%;
+    text-align: center;
+  }
+}
 .strategize .inner-top {
   background: url(../img/cube.png) no-repeat right top;
   margin-bottom: 50px;
+}
+@media (max-width: 980px) {
+  .strategize .inner-top {
+    background: none;
+  }
 }
 .strategize .quise {
   border-radius: 50px;
   border: 2px solid rgba(68, 184, 72, 0.12);
   padding: 40px 52px 40px 50px;
 }
+@media (max-width: 450px) {
+  .strategize .quise {
+    padding: 20px 10px;
+  }
+}
 .strategize .quise-list {
   display: flex;
   justify-content: space-between;
   position: relative;
+}
+@media (max-width: 980px) {
+  .strategize .quise-list {
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    gap: 12px;
+    justify-content: flex-start;
+    padding: 0 16px;
+  }
 }
 .strategize .quise-list::after {
   content: "";
@@ -822,11 +864,29 @@ body.hidden {
   background: #fbbc00;
   color: #fff;
 }
+@media (max-width: 980px) {
+  .strategize .quise-item {
+    flex: 0 0 auto;
+  }
+}
+@media (max-width: 450px) {
+  .strategize .quise-item {
+    width: 95px;
+    height: 35px;
+    font-size: 12px;
+  }
+}
 .strategize .quise-wrapper {
   display: flex;
   align-items: flex-start;
   gap: 42px;
   margin-top: 7px;
+}
+@media (max-width: 850px) {
+  .strategize .quise-wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 .strategize .quise-img {
   max-width: 397px;
@@ -896,8 +956,18 @@ body.hidden {
   border: 1px solid #eff4f9;
   border-radius: 12px;
 }
+@media (max-width: 450px) {
+  .services .project {
+    height: 390px;
+  }
+}
 .services .project div {
   padding: 24px;
+}
+@media (max-width: 450px) {
+  .services .project div {
+    padding: 10px;
+  }
 }
 .services .project h3 {
   font-weight: 600;
@@ -931,6 +1001,11 @@ body.hidden {
   display: flex;
   gap: 40px;
   margin-bottom: 150px;
+}
+@media (max-width: 1200px) {
+  .strategy-wrapper {
+    flex-wrap: wrap;
+  }
 }
 .strategy-content {
   max-width: 640px;
@@ -988,6 +1063,11 @@ body.hidden {
   display: flex;
   gap: 40px;
   margin-bottom: 150px;
+}
+@media (max-width: 1200px) {
+  .strategy-wrapper {
+    flex-wrap: wrap;
+  }
 }
 .strategy-content {
   max-width: 640px;
@@ -1794,6 +1874,11 @@ body.hidden {
     gap: 70px;
   }
 }
+@media (max-width: 450px) {
+  .footer-top {
+    justify-content: flex-start;
+  }
+}
 .footer .logo figure {
   width: 200px;
   margin-bottom: 30px;
@@ -1846,6 +1931,12 @@ body.hidden {
 .footer-middle .block {
   display: flex;
   gap: 50px;
+}
+@media (max-width: 450px) {
+  .footer-middle .block {
+    flex-wrap: wrap;
+    gap: 25px;
+  }
 }
 .footer-info span {
   display: block;

@@ -5,17 +5,34 @@
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+
+        @media (max-width: 980px) {
+            margin: 0 auto;
+
+
+        }
     }
 
     &-title {
         max-width: 641px;
         width: 100%;
         text-align: left;
+
+        @media (max-width: 980px) {
+            max-width: 100%;
+            text-align: center;
+        }
+
+
     }
 
     .inner-top {
         background: url(../img/cube.png) no-repeat right top;
         margin-bottom: 50px;
+
+        @media (max-width: 980px) {
+            background: none;
+        }
     }
 
     .quise {
@@ -23,10 +40,24 @@
         border: 2px solid rgba(68, 184, 72, 0.12);
         padding: 40px 52px 40px 50px;
 
+        @media (max-width: 450px) {
+            padding: 20px 10px;
+        }
+
         &-list {
             display: flex;
             justify-content: space-between;
             position: relative;
+
+            @media (max-width: 980px) {
+                overflow-x: auto;
+                overflow-y: hidden;
+                -webkit-overflow-scrolling: touch; // плавный скролл на iOS
+                gap: 12px; // если хочешь, чтобы кнопки не слипались
+                justify-content: flex-start;
+                padding: 0 16px;
+            }
+
 
             &::after {
                 content: '';
@@ -64,6 +95,16 @@
                 background: #fbbc00;
                 color: #fff;
             }
+
+            @media (max-width: 980px) {
+                flex: 0 0 auto;
+            }
+
+            @media (max-width: 450px) {
+                width: 95px;
+                height: 35px;
+                font-size: 12px;
+            }
         }
 
         &-wrapper {
@@ -71,6 +112,11 @@
             align-items: flex-start;
             gap: 42px;
             margin-top: 7px;
+
+            @media (max-width: 850px) {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
         }
 
         &-img {
@@ -114,7 +160,7 @@
             margin-bottom: 10px;
             background: url(../img/arrow-item.svg) no-repeat left center;
 
-            &:last-child{
+            &:last-child {
                 margin-bottom: 0;
             }
         }
