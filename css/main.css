@@ -1177,6 +1177,9 @@ body.hidden {
   margin-bottom: 25px;
 }
 
+.not-sure {
+  padding: 0 15px;
+}
 .not-sure__wrapper {
   display: flex;
   padding: 46px 48px 46px 50px;
@@ -1185,14 +1188,21 @@ body.hidden {
   border-radius: 20px;
   align-items: center;
 }
+@media (max-width: 590px) {
+  .not-sure__wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 25px;
+  }
+}
 .not-sure .container {
-  padding: 50px 0px;
-  width: 1300px;
-  height: 336px;
+  padding: 50px 15px;
+  max-width: 1300px;
+  width: 100%;
 }
 .not-sure h2 {
   font-weight: 700;
-  font-size: 64px;
+  font-size: clamp(24px, 5vw, 64px);
   line-height: 1.12;
   letter-spacing: -0.01em;
   color: #DFF0E1;
@@ -1200,7 +1210,13 @@ body.hidden {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: rgba(0, 0, 0, 0.39);
-  width: 967px;
+  max-width: 967px;
+  width: 100%;
+}
+@media (max-width: 590px) {
+  .not-sure h2 {
+    text-align: center;
+  }
 }
 .not-sure h2 span {
   font-size: 18px;
@@ -1215,10 +1231,15 @@ body.hidden {
   color: #2a2e33;
   border-radius: 32px;
   padding: 16px 0 16px 35px;
-  width: 185px;
+  min-width: 185px;
   height: 54px;
   box-shadow: inset 0 1px 2px 0 rgba(2, 147, 22, 0.6196078431), inset 0 -1px 2px 0 rgba(2, 147, 22, 0.6196078431);
-  background: url(../img/arrow-contact.svg) no-repeat right 35px center, linear-gradient(180deg, #fff 0%, #dedede 100%);
+  background: url(../img/arrow-contact.svg) no-repeat right 15px center, linear-gradient(180deg, #fff 0%, #dedede 100%);
+}
+@media (max-width: 1300) {
+  .not-sure__link {
+    display: block;
+  }
 }
 
 .experience {
