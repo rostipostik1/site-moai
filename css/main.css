@@ -1005,6 +1005,7 @@ body.hidden {
 @media (max-width: 1200px) {
   .strategy-wrapper {
     flex-wrap: wrap;
+    justify-content: center;
   }
 }
 .strategy-content {
@@ -1012,21 +1013,48 @@ body.hidden {
   width: 100%;
   background: url(../img/mix.jpg) no-repeat left bottom;
 }
+@media (max-width: 1200px) {
+  .strategy-content {
+    background: none;
+    max-width: 100%;
+    text-align: center;
+  }
+}
 .strategy-subtitle {
   margin: 0 auto 16px 0;
+}
+@media (max-width: 1200px) {
+  .strategy-subtitle {
+    margin: 0 auto 16px;
+  }
 }
 .strategy-title {
   text-align: left;
 }
+@media (max-width: 1200px) {
+  .strategy-title {
+    text-align: center;
+  }
+}
 .strategy-list {
   max-width: 605px;
   width: 100%;
+}
+@media (max-width: 1200px) {
+  .strategy-list {
+    max-width: 100%;
+  }
 }
 .strategy-info {
   padding: 40px 30px 40px 113px;
   background-repeat: no-repeat;
   background-position: 40px 40px;
   transition: 0.3s linear;
+}
+@media (max-width: 450px) {
+  .strategy-info {
+    background-size: 13%;
+  }
 }
 .strategy-info:hover {
   box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.06);
@@ -1067,6 +1095,7 @@ body.hidden {
 @media (max-width: 1200px) {
   .strategy-wrapper {
     flex-wrap: wrap;
+    justify-content: center;
   }
 }
 .strategy-content {
@@ -1074,21 +1103,48 @@ body.hidden {
   width: 100%;
   background: url(../img/mix.jpg) no-repeat left bottom;
 }
+@media (max-width: 1200px) {
+  .strategy-content {
+    background: none;
+    max-width: 100%;
+    text-align: center;
+  }
+}
 .strategy-subtitle {
   margin: 0 auto 16px 0;
+}
+@media (max-width: 1200px) {
+  .strategy-subtitle {
+    margin: 0 auto 16px;
+  }
 }
 .strategy-title {
   text-align: left;
 }
+@media (max-width: 1200px) {
+  .strategy-title {
+    text-align: center;
+  }
+}
 .strategy-list {
   max-width: 605px;
   width: 100%;
+}
+@media (max-width: 1200px) {
+  .strategy-list {
+    max-width: 100%;
+  }
 }
 .strategy-info {
   padding: 40px 30px 40px 113px;
   background-repeat: no-repeat;
   background-position: 40px 40px;
   transition: 0.3s linear;
+}
+@media (max-width: 450px) {
+  .strategy-info {
+    background-size: 13%;
+  }
 }
 .strategy-info:hover {
   box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.06);
