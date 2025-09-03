@@ -42,6 +42,10 @@ body {
 
 .padding-large {
     padding: 150px 0;
+
+    @media (max-width: 980px) {
+        padding: 50px 0;
+    }
 }
 
 
