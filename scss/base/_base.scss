@@ -88,7 +88,9 @@ body {
 
 .header-gradient {
     background: url(../img/bg-header.png) no-repeat center, linear-gradient(176deg, #ffeded 0%, rgba(255, 237, 237, 0) 100%), linear-gradient(105deg, #fff 0%, rgba(255, 255, 255, 0) 100%);
-
+    &-contact {
+            background: url(../img/bg-header.png) no-repeat center, linear-gradient(176deg, #ffffff 0%, rgba(255, 237, 237, 0) 100%), linear-gradient(105deg, #fff 0%, rgba(255, 255, 255, 0) 100%);
+    }
 }
 
 .p-150 {

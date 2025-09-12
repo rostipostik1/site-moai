@@ -9,7 +9,7 @@
     }
 
     .card-img {
-        max-width: 420px;
+        max-width: 310px;
         width: 100%;
         position: relative;
         border-radius: 30px;
@@ -33,13 +33,15 @@
         img {
             border-radius: 30px;
             height: 100%;
+            margin: auto;
+            display: block;
         }
 
         figcaption {
             position: absolute;
-            left: 30px;
+            left: 50%;
+            transform: translateX(-50%);
             bottom: 30px;
-            width: 360px;
             color: $colorWite;
             z-index: 2;
         }
@@ -67,16 +69,17 @@
         }
 
         &:hover {
-            .card-title{
+            .card-title {
                 transform: translateY(-10px);
             }
+
             .card-text {
                 animation: fadein .3s linear forwards;
             }
 
             &::before {
                 opacity: 1;
-            
+
 
             }
         }
@@ -95,22 +98,25 @@
     }
 }
 
-@keyframes fadein{
-    from{
+@keyframes fadein {
+    from {
         max-height: 0;
         opacity: 0;
     }
-    to{
+
+    to {
         max-height: 97px;
         opacity: 1;
     }
 }
-@keyframes fadeout{
-    from{
+
+@keyframes fadeout {
+    from {
         max-height: 97px;
         opacity: 1;
     }
-    to{
+
+    to {
         max-height: 0;
         opacity: 0;
     }

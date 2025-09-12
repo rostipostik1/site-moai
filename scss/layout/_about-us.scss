@@ -3,6 +3,13 @@
 &_content {
     display: flex;
     gap: 130px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @media (max-width: 1300px) {
+        gap: 50px;
+    }
+    
 }
 
 &_text {
