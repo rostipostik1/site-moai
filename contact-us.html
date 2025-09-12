@@ -108,19 +108,38 @@
                     <h2>Having a Question or Request?</h2>
                     <p>Share your input and we’ll be in touch shortly</p>
 
-                    <form action="#" method="post">
+                    <form method="post">
                         <div class="form-group">
-                            <input type="text" name="name" placeholder="Enter your name">
-                            <input type="tel" name="phone" placeholder="Enter your Phone number">
+                            <label for="">
+                                <span>name</span>
+                                <input type="text" name="name" placeholder="Enter your name">
+                            </label>
+
                         </div>
                         <div class="form-group">
-                            <input type="email" name="email" placeholder="Ex: you@mail.com">
-                            <input type="Organization" name="organization" placeholder="Enter Organization details">
+                            <label for="">
+                                <span>Phone number</span>
+                                <input type="tel" name="phone" placeholder="Enter your Phone number">
+                            </label>
+                            <label for="">
+                                <span>email</span>
+                                <input type="email" name="email" placeholder="Ex: you@mail.com">
+                            </label>
                         </div>
                         <div class="form-group">
-                            <input type="Designation" name="designation" placeholder="Enter Designation">
+                            <label for="">
+                                <span>organization</span>
+                                <input type="Organization" name="organization" placeholder="Enter Organization details">
+                            </label>
+                            <label for="">
+                                <span>Designation</span>
+                                <input type="Designation" name="designation" placeholder="Enter Designation">
+                            </label>
+
+
                         </div>
-                        <div class="form-group services">
+                        <h4>service</h4>
+                        <div class="form-group services-button">
                             <button type="button">Mobile Application Development</button>
                             <button type="button">Web Application Development</button>
                             <button type="button">AI Application Design</button>
@@ -129,12 +148,14 @@
                             <button type="button">IoT & Embedded</button>
                         </div>
                         <div class="form-group">
-                            <textarea name="message" placeholder="Enter your message"></textarea>
+                            <label for="">
+                                <span>message for us</span>
+                                <textarea name="message" placeholder="Enter your message"></textarea>
+                            </label>
                         </div>
                         <div class="form-group">
-                            <label>
-                                <input type="checkbox" name="privacy"> By clicking on submit, I agree with Moai Privacy
-                                Policy
+                            <label class="privacy">
+                                 By clicking on submit, I agree with Moai Privacy Policy
                             </label>
                         </div>
                         <button type="submit">Submit</button>

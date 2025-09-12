@@ -1,63 +1,3 @@
-// .contact {
-//     .header-content {
-//         max-width: 655px;
-//     }
-
-//     &-wrapper {
-//         display: flex;
-//         gap: 50px;
-//         justify-content: space-between;
-//     }
-
-//     &-info {
-//         max-width: 520px;
-//         width: 100%;
-//         padding: 10px 10px 20px;
-
-//         h2 {
-//             font-weight: 700;
-//             font-size: 64px;
-//             line-height: 1.12;
-//             letter-spacing: -0.01em;
-//             color: $colorTitle;
-//             margin-bottom: 15px;
-//         }
-
-//         &__text {
-//             font-size: 24px;
-//             line-height: 1.5;
-//             letter-spacing: -0.01em;
-//             color: $colorTitle;
-//             margin-bottom: 168px;
-//         }
-//     }
-
-//     &-form {
-//         max-width: 570px;
-//         width: 100%;
-//         background: #fff;
-//         padding: 30px;
-//         border-radius: 30px;
-//     }
-
-//     &-details {
-
-
-//         h3 {
-//             font-weight: 600;
-//             font-size: 28px;
-//             line-height: 114%;
-//             letter-spacing: -0.01em;
-//             background: linear-gradient(180deg, rgba(42, 46, 51, 0.62) 0%, #000 100%);
-//             background-clip: text;
-//             -webkit-background-clip: text;
-//             -webkit-text-fill-color: transparent;
-//         }
-//     }
-
-
-// }
-
 .contact {
     padding: 80px 0;
     background: #fff;
@@ -170,20 +110,33 @@
 
 
     &-form {
-        flex: 1 1 55%;
+        max-width: 570px;
+        width: 100%;
         background: #fff;
-        border-radius: 16px;
-        padding: 40px;
+        border-radius: 30px;
+        padding: 30px;
         box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
 
         h2 {
             font-size: 24px;
             margin-bottom: 8px;
+            text-align: center;
         }
 
         p {
-            margin-bottom: 24px;
+            margin-bottom: 30px;
             color: #666;
+            text-align: center;
+
+        }
+
+        h4 {
+            font-weight: 400;
+            text-transform: capitalize;
+            font-size: 14px;
+            line-height: 1.43;
+            color: #707d8e;
+            margin-bottom: 5px;
         }
 
         form {
@@ -195,6 +148,10 @@
                 display: flex;
                 gap: 16px;
                 width: 100%;
+
+                &:first-child {
+                    flex-direction: column;
+                }
 
                 input,
                 textarea {
@@ -217,13 +174,20 @@
                     }
                 }
 
-                /* NAME и MESSAGE на всю ширину */
-                &:first-child input,
-                &:nth-last-child(3) textarea {
+
+                // &:first-child input,
+                // &:nth-last-child(3) 
+                textarea {
                     flex: 1 1 100%;
+                    height: 82px;
+                    border: 0.50px solid #707d8e;
+                    border-radius: 5px;
+                    padding: 10px;
+                    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+                    resize: none;
                 }
 
-                /* Service кнопки */
+
                 &.services {
                     display: grid;
                     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -262,15 +226,18 @@
                     }
                 }
 
-                /* Чекбокс с текстом */
+
                 label {
-                    font-size: 13px;
-                    line-height: 1.5;
+                    font-size: 14px;
+                    line-height: 1.4;
                     color: #707d8e;
                     display: flex;
-                    align-items: flex-start;
-                    gap: 10px;
+                    flex-direction: column;
+                    gap: 5px;
                     cursor: pointer;
+                    text-transform: capitalize;
+                    width: 100%;
+
 
                     input[type="checkbox"] {
                         width: 16px;
@@ -287,7 +254,31 @@
                 }
             }
 
-            /* Кнопка отправки */
+            .services-button {
+                flex-wrap: wrap;
+                gap: 10px;
+
+                button {
+                    border: 1px solid #e5ebf2;
+                    border-radius: 10px;
+                    padding: 10px;
+                    width: 163px;
+                    height: 80px;
+                    backdrop-filter: blur(60px);
+                    background: #fff;
+                    font-family: var(--font-family);
+                    font-size: 14px;
+                    line-height: 1.43;
+                    text-align: center;
+                    background: linear-gradient(180deg, rgba(42, 46, 51, 0.62) 0%, #000 100%);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+
+                }
+            }
+
+
             button[type="submit"] {
                 width: 100%;
                 padding: 14px 24px;
@@ -295,25 +286,26 @@
                 border: none;
                 font-size: 16px;
                 font-weight: 600;
-                background: #fbbc00;
+                background: linear-gradient(180deg, #303439 17.71%, #000812 97.4%);
                 color: #fff;
                 cursor: pointer;
-                transition: background .2s ease;
+                transition: .2s ;
 
                 &:hover {
                     background: #e0a900;
+                    transition: .3s;
                 }
             }
         }
     }
 
-    /* ====== Адаптив ====== */
+
     @media (max-width: 768px) {
         .contact-wrapper {
             flex-direction: column;
         }
 
-        &-form {
+        &-form {;
             padding: 24px;
         }
 
