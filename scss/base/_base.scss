@@ -146,3 +146,20 @@ body {
 .header-img__radius img {
     border-radius: 30px;
 }
+
+            button[type="submit"] {
+                width: 100%;
+                border-radius: 30px;
+                border: 1px solid #0c0d0e;
+                font-size: 16px;
+                font-weight: 600;
+                background: linear-gradient(180deg, #303439 17.71%, #000812 97.4%);
+                color: #fff;
+                cursor: pointer;
+                transition: .3s linear;
+
+                &:hover {
+                    background: #fff;
+                    color: $colorTitle;
+                }
+            }
