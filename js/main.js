@@ -101,5 +101,18 @@ mobile.addEventListener('click', () => {
 
 })
 
+// button contact
+
+const allButtons = document.querySelectorAll('.services-button button')
+
+allButtons.forEach(button => {
+    button.addEventListener('click', function() {
+        for (let i = 0; i < allButtons.length; i++) {
+            const element = allButtons[i];
+            element.classList.remove('active')
+        }
+        button.classList.add('active')
+    })
+});
 
 

@@ -293,6 +293,7 @@
                 gap: 10px;
 
                 button {
+                    cursor: pointer;
                     border: 1px solid #e5ebf2;
                     border-radius: 10px;
                     padding: 10px;
@@ -308,7 +309,11 @@
                     background-clip: text;
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
+                    transition: .3s linear;
 
+                    &.active {
+                        border-color: $colorDark;
+                    }
                 }
             }
 

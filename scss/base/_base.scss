@@ -88,8 +88,9 @@ body {
 
 .header-gradient {
     background: url(../img/bg-header.png) no-repeat center, linear-gradient(176deg, #ffeded 0%, rgba(255, 237, 237, 0) 100%), linear-gradient(105deg, #fff 0%, rgba(255, 255, 255, 0) 100%);
+
     &-contact {
-            background: url(../img/bg-header.png) no-repeat center, linear-gradient(176deg, #ffffff 0%, rgba(255, 237, 237, 0) 100%), linear-gradient(105deg, #fff 0%, rgba(255, 255, 255, 0) 100%);
+        background: url(../img/bg-header.png) no-repeat center, linear-gradient(176deg, #ffffff 0%, rgba(255, 237, 237, 0) 100%), linear-gradient(105deg, #fff 0%, rgba(255, 255, 255, 0) 100%);
     }
 }
 
@@ -114,6 +115,12 @@ body {
     line-height: 1.78;
     letter-spacing: .04em;
     color: #fff;
+    transition: .3s linear;
+
+    &:hover {
+        background: #fff url(../img/arrow-right.svg) no-repeat right 20px center;
+        color: $colorTitle;
+    }
 }
 
 .arrow-up {
@@ -147,19 +154,19 @@ body {
     border-radius: 30px;
 }
 
-            button[type="submit"] {
-                width: 100%;
-                border-radius: 30px;
-                border: 1px solid #0c0d0e;
-                font-size: 16px;
-                font-weight: 600;
-                background: linear-gradient(180deg, #303439 17.71%, #000812 97.4%);
-                color: #fff;
-                cursor: pointer;
-                transition: .3s linear;
+button[type="submit"] {
+    width: 100%;
+    border-radius: 30px;
+    border: 1px solid #0c0d0e;
+    font-size: 16px;
+    font-weight: 600;
+    background: linear-gradient(180deg, #303439 17.71%, #000812 97.4%);
+    color: #fff;
+    cursor: pointer;
+    transition: .3s linear;
 
-                &:hover {
-                    background: #fff;
-                    color: $colorTitle;
-                }
-            }
+    &:hover {
+        background: #fff;
+        color: $colorTitle;
+    }
+}

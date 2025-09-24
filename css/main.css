@@ -352,6 +352,11 @@ body.hidden {
   line-height: 1.78;
   letter-spacing: 0.04em;
   color: #fff;
+  transition: 0.3s linear;
+}
+.link--black:hover {
+  background: #fff url(../img/arrow-right.svg) no-repeat right 20px center;
+  color: #2a2e33;
 }
 
 .arrow-up {
@@ -549,6 +554,10 @@ button[type=submit]:hover {
   line-height: 1.78;
   letter-spacing: 0.04em;
   color: #fff;
+}
+.header-link:hover {
+  background: #fff;
+  color: #2a2e33;
 }
 .header .nav {
   flex: 1;
@@ -2160,6 +2169,7 @@ button[type=submit]:hover {
   gap: 10px;
 }
 .contact-form form .services-button button {
+  cursor: pointer;
   border: 1px solid #e5ebf2;
   border-radius: 10px;
   padding: 10px;
@@ -2176,6 +2186,10 @@ button[type=submit]:hover {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  transition: 0.3s linear;
+}
+.contact-form form .services-button button.active {
+  border-color: #010902;
 }
 .contact-form form button {
   padding: 8px 24px;
